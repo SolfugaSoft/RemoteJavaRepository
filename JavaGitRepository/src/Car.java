@@ -76,14 +76,13 @@ class Parts {
 		else {
 			System.out.println("c'mon take a new shiny parts for your car i feel like a King");
 
-			Thread.sleep(500);
-			System.out.print(".");
-			Thread.sleep(750);
-			System.out.print("..");
-			Thread.sleep(1000);
-			System.out.print("...");
-			Thread.sleep(1500);
-			System.out.print("....");
+			
+			for (int i =0; i<4 ; i++)
+			{
+				System.out.print(".");
+				Thread.sleep(250);
+			}
+			
 			
 
 			System.out.println("Write 'OK' if you wana add any special parts for Your car ");
