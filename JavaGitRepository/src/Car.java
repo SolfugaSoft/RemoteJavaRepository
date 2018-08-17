@@ -77,13 +77,13 @@ class Parts {
 			System.out.println("c'mon take a new shiny parts for your car i feel like a King");
 
 			Thread.sleep(500);
-			System.out.println(".");
+			System.out.print(".");
+			Thread.sleep(750);
+			System.out.print("..");
 			Thread.sleep(1000);
-			System.out.println("..");
+			System.out.print("...");
 			Thread.sleep(1500);
-			System.out.println("...");
-			Thread.sleep(2000);
-			System.out.println("....");
+			System.out.print("....");
 			
 
 			System.out.println("Write 'OK' if you wana add any special parts for Your car ");
