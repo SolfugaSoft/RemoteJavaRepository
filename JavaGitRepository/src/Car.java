@@ -103,8 +103,7 @@ class CustomerType {
 	CustomerType() {
 		
 		System.out.println("Tell us something about YOU");
-		}
-		
+	}
 void addCustomer() {
 		Scanner customerScanner = new Scanner(System.in);
 		String name = customerScanner.nextLine();
@@ -114,7 +113,11 @@ void addCustomer() {
 		boolean creditworthiness;
 
 		if((monthlyIncome - costStructure)>(monthlyIncome / 2)) {
-}
+			creditworthiness = true;
+			System.out.println("So if You are not a NINJA We have pretty new Car for You");
+			
+			 
+		}
 			
 	}
 }
