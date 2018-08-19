@@ -29,6 +29,7 @@ public class Car {
 		new SportCar(2, 4, "red", "Laraki Epitome");
 		new SportCar(4, 4, "white", "Aston Martine Rapide");
 		new Parts();
+		new CustomerType();
 
 	}
 }
@@ -63,9 +64,9 @@ class SportCar {
 class Parts {
 
 	Parts() throws Exception {
-		System.out.println("Write 'OK' if you wana add any special parts for Your car ");
+		System.out.println("Write 'OK' if you wanna add any special parts for Your car ");
 
-		String showParts;
+		String showParts; // temporary variable used for input parts name
 		Scanner takeParts = new Scanner(System.in);
 
 		showParts = takeParts.nextLine();
@@ -76,24 +77,19 @@ class Parts {
 		else {
 			System.out.println("c'mon take a new shiny parts for your car i feel like a King");
 
-			
-			for (int i =0; i<4 ; i++)
-			{
+			for (int i = 0; i < 4; i++) {
 				System.out.print(".");
 				Thread.sleep(250);
 			}
-			
-			
 
-			System.out.println("Write 'OK' if you wana add any special parts for Your car ");
 		}
 
-		Scanner addParts = new Scanner(System.in);
+		Scanner addParts = new Scanner(System.in); // second scanners u
 		System.out.println("write what parts you need");
 
 		String name = addParts.nextLine();
 		double tmpName = name.length();
-		double ID = tmpName / 3;
+		double ID = tmpName * 2;
 		double price = tmpName;
 
 		System.out.println("Summary: parts name is - " + name);
@@ -101,4 +97,24 @@ class Parts {
 		System.out.println("Summary: parts ID is - " + ID);
 	}
 
+}
+
+class CustomerType {
+	CustomerType() {
+		
+		System.out.println("Tell us something about YOU");
+		}
+		
+void addCustomer() {
+		Scanner customerScanner = new Scanner(System.in);
+		String name = customerScanner.nextLine();
+		int age = customerScanner.nextInt();
+		double monthlyIncome = customerScanner.nextDouble();
+		double costStructure = customerScanner.nextDouble();
+		boolean creditworthiness;
+
+		if((monthlyIncome - costStructure)>(monthlyIncome / 2)) {
+}
+			
+	}
 }
