@@ -1,38 +1,35 @@
-import java.sql.Time;
 import java.util.Scanner;
-import java.util.Timer;
 
-public class Car {
-	public static void main(String[] args) throws Exception {
-
-		// this is object first is class name next is name of new object
-
-		SportCar Arrinera = new SportCar();
-
-		Arrinera.color = "red";
-		Arrinera.doors = 2;
-		Arrinera.name = "Arrinera Hussarya";
-		Arrinera.wheels = 4;
-
-		SportCar Spyker = new SportCar();
-
-		Spyker.color = "orange";
-		Spyker.doors = 2;
-		Spyker.name = "Spiker c8";
-		Spyker.wheels = 4;
-
-		Arrinera.run();
-
-		System.out.println(Arrinera.name);
-		System.out.println(Spyker.doors);
-
-		new SportCar(2, 4, "red", "Laraki Epitome");
-		new SportCar(4, 4, "white", "Aston Martine Rapide");
-		new Parts();
-		new CustomerType();
-
-	}
-}
+public class CarSelector {
+//	public static void main(String[] args) throws Exception {
+//
+//		// this is object first is class name next is name of new object
+//
+//		SportCar Arrinera = new SportCar();
+//
+//		Arrinera.color = "red";
+//		Arrinera.doors = 2;
+//		Arrinera.name = "Arrinera Hussarya";
+//		Arrinera.wheels = 4;
+//
+//		SportCar Spyker = new SportCar();
+//
+//		Spyker.color = "orange";
+//		Spyker.doors = 2;
+//		Spyker.name = "Spiker c8";
+//		Spyker.wheels = 4;
+//
+//		Arrinera.run();
+//
+//		System.out.println(Arrinera.name);
+//		System.out.println(Spyker.doors);
+//
+//		new SportCar(2, 4, "red", "Laraki Epitome");
+//		new SportCar(4, 4, "white", "Aston Martine Rapide");
+//		new Parts();
+//
+//	}
+//}
 
 //this is class, something like pattern using for creating objects, in class  i can create object and add properties and methods
 
@@ -84,7 +81,7 @@ class Parts {
 
 		}
 
-		Scanner addParts = new Scanner(System.in); // second scanners u
+		Scanner addParts = new Scanner(System.in); // second scanners
 		System.out.println("write what parts you need");
 
 		String name = addParts.nextLine();
@@ -96,28 +93,5 @@ class Parts {
 		System.out.println("Summary: parts price is - " + price);
 		System.out.println("Summary: parts ID is - " + ID);
 	}
-
 }
-
-class CustomerType {
-	CustomerType() {
-		
-		System.out.println("Tell us something about YOU");
-	}
-void addCustomer() {
-		Scanner customerScanner = new Scanner(System.in);
-		String name = customerScanner.nextLine();
-		int age = customerScanner.nextInt();
-		double monthlyIncome = customerScanner.nextDouble();
-		double costStructure = customerScanner.nextDouble();
-		boolean creditworthiness;
-
-		if((monthlyIncome - costStructure)>(monthlyIncome / 2)) {
-			creditworthiness = true;
-			System.out.println("So if You are not a NINJA We have pretty new Car for You");
-			
-			 
-		}
-			
-	}
 }
