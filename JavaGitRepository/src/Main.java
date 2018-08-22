@@ -1,8 +1,12 @@
 
-import org.omg.PortableServer.POAPackage.ObjectAlreadyActive;
-
 public class Main {
 
+	public static void main(String[] args) {
+		
+		
+		
+		
 
+	}
 
 }
