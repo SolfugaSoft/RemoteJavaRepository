@@ -1,21 +1,44 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.Scanner;
 
 public class SaveCustomerFile {
+	 public static void main(String[] args) {
+	
+		 System.out.println("Give the file name");
+	
+	Scanner giveFileName = new Scanner(System.in);
+	String fileName = giveFileName.nextLine();
+	
+	saveFile(fileName + ".txt");
+	String fileToRead = readFile(fileName);
+	
+	System.out.println("Customer Info: \n" + fileToRead);
+	
+	 }
 	
 	public static void saveFile(String fileName) {
 
 		try {
+			System.out.println("Create new file");
+			
 			PrintWriter fileIn = new PrintWriter(fileName);
-
 			Scanner customer = new Scanner(System.in);
+			
+			System.out.println("ID");
 			double id = customer.nextDouble();
+			
+			System.out.println("Name");
 			String name = customer.nextLine();
+			
+			System.out.println("Surname");
 			String surname = customer.nextLine();
+			
+			System.out.println("Age");
 			int age = customer.nextInt();
+			
+			System.out.println("Salary");
 			double salary = customer.nextDouble();
 
 			fileIn.println(id);
